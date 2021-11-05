@@ -152,7 +152,7 @@ header nav ul li a {
     text-decoration: none;
     display: block;
     transition: .3s;
-    /* position: relative; */
+    position: relative;
 }
 
 @media (min-width:768px) {
@@ -339,10 +339,10 @@ header nav ul li:hover a::after {
 
 .services .select .b1 {
     padding: 15px 40px;
+    border: 1px solid #777;
     border-right: none;
     width: 50%;
     cursor: pointer;
-    border: 1px solid #777;
 }
 
 .services .select .b2 {
@@ -351,7 +351,11 @@ header nav ul li:hover a::after {
     width: 50%;
     cursor: pointer;
 }
-
+@media (max-width:576px){
+    .sevices .select button{
+        padding: 15px 10px;
+    }
+}
 .services .phone-prv {
     display: flex;
     justify-content: center;
